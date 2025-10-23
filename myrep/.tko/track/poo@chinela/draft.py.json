@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_15-16-57",
+            "content": "@@ -88,16 +88,17 @@\n hinela(4\n+4\n );%0Aprint\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-06_15-17-25",
+            "content": "@@ -87,17 +87,19 @@\n Chinela(\n-)\n+4);\n %0Aprint(h\n@@ -109,9 +109,5 @@\n iana\n-(44)\n )\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-06_15-18-05",
+            "content": "@@ -62,19 +62,16 @@\n int = 0%0A\n-%0A%0A%0A\n     %0A%0Aha\n@@ -93,22 +93,8 @@\n a()%0A\n-havaiana(44)%0A%0A\n prin\n@@ -103,9 +103,13 @@\n havaiana\n+(44)\n )\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-06_15-21-04",
+            "content": "@@ -79,16 +79,17 @@\n havaiana\n+ \n = Chinel\n@@ -91,16 +91,29 @@\n hinela()\n+%0Ahavaiana(44)\n %0A%0Aprint(\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-06_15-22-32",
+            "content": "@@ -63,16 +63,19 @@\n nt = 0%0A%0A\n+%0A%0A \n    %0A%0Ahav\n@@ -93,10 +93,8 @@\n ela(\n-44\n )%0A%0Ap\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-10-06_15-23-12",
+            "content": "@@ -33,17 +33,8 @@\n self\n-, tamanho\n ):%0A \n@@ -56,18 +56,17 @@\n anho\n- = tamanho\n+: int = 0\n %0A%0A  \n@@ -105,17 +105,9 @@\n havaiana\n-.tamanho\n )\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-06_15-25-59",
+            "content": "@@ -54,18 +54,16 @@\n    self.\n-__\n tamanho \n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-06_15-26-16",
+            "content": "@@ -82,97 +82,8 @@\n %0A   \n-%0A    def set_tamanho%0A%0A%0A    def get_tamanho(self) -%3E int:%0A        return.self__tamanho%0A   \n %0A%0Aha\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-07_14-36-33",
+            "content": "@@ -29,16 +29,25 @@\n t__(self\n+, tamanho\n ):%0A     \n@@ -70,154 +70,41 @@\n o = \n-0; %0A%0A    def set_tamanho(self, peh):\n+tamanho%0A\n %0A   \n+%0A\n     \n- if peh %3E= 50 and peh %3C= 20 and peh %25 2 != 0%0A            print(%22fail: ou vc tem pezao ou vc n tem pe%22)\n+def set_tamanho%0A\n %0A%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-07_14-46-48",
+            "content": "@@ -145,17 +145,16 @@\n %25 2 != 0\n-:\n %0A       \n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-07_14-46-58",
+            "content": "@@ -254,17 +254,17 @@\n   return\n- \n+.\n self__ta\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-07_14-47-08",
+            "content": "@@ -73,17 +73,18 @@\n  def set\n-T\n+_t\n amanho(s\n@@ -94,13 +94,9 @@\n , pe\n-: int\n+h\n ):%0A \n@@ -107,16 +107,17 @@\n    if pe\n+h\n  %3E= 50 a\n@@ -121,16 +121,17 @@\n 0 and pe\n+h\n  %3C= 20 a\n@@ -135,16 +135,17 @@\n 0 and pe\n+h\n  %25 2 != \n@@ -209,102 +209,8 @@\n e%22)%0A\n-            return False%0A        else:%0A            self.__tamanho = pe%0A            return True\n %0A   \n@@ -217,17 +217,18 @@\n  def get\n-T\n+_t\n amanho(s\n@@ -273,542 +273,55 @@\n nho%0A\n-%0Achinela = Chinela()%0A%0Adef main():%0A    chinela = None%0A    while True:%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print(%22$%22 + line)%0A        if not args%5B0%5D:%0A            continue%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22init%22:%0A            batteryMax = int(args%5B1%5D)%0A            chinela = Chinela()%0A        elif args%5B0%5D == %22show%22:%0A            if calculadora is not None: %0A                print(calculadora)%0A%0A        else:%0A            print(%22fail: comando desconhecido%22)%0A%0Amain()%0A\n+   %0A%0Ahavaiana= Chinela(44)%0A%0Aprint(havaiana.tamanho)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-07_15-03-24",
+            "content": "@@ -651,16 +651,54 @@\n %22init%22:%0A\n+            batteryMax = int(args%5B1%5D)%0A\n         \n@@ -722,19 +722,8 @@\n nela\n-.setTamanho\n ()%0A \n@@ -769,22 +769,72 @@\n     \n-print(chinela)\n+if calculadora is not None: %0A                print(calculadora)%0A\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-07_15-06-58",
+            "content": "@@ -663,9 +663,9 @@\n     \n-#\n+ \n    c\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_15-08-58",
+            "content": "@@ -655,25 +655,25 @@\n t%22:%0A        \n- \n+#\n    chinela =\n@@ -680,16 +680,27 @@\n  Chinela\n+.setTamanho\n ()%0A     \n@@ -757,17 +757,8 @@\n la)%0A\n-        %0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-07_15-12-14",
+            "content": "@@ -363,16 +363,35 @@\n amanho%0A%0A\n+chinela = Chinela()\n %0A%0Adef ma\n@@ -406,33 +406,28 @@\n   chinela = \n-Chinela()\n+None\n %0A    while T\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-07_15-15-22",
+            "content": "@@ -33,22 +33,8 @@\n self\n-, tamanho: int\n ):%0A \n@@ -57,23 +57,19 @@\n manho = \n-tamanho\n+0; \n %0A%0A    de\n@@ -367,104 +367,8 @@\n ho%0A%0A\n-    def __str__(self) -%3E str:%0A        return f%22sua chinela %C3%A9 do tamanho %7Bself.getTamanho%7D%22%0A    %0A\n %0A%0Ade\n@@ -391,20 +391,25 @@\n inela = \n-None\n+Chinela()\n %0A    whi\n@@ -641,38 +641,8 @@\n t%22:%0A\n-            tamanho = args%5B1%5D%0A\n     \n@@ -667,23 +667,16 @@\n Chinela(\n-tamanho\n )%0A      \n@@ -681,218 +681,67 @@\n     \n-    print (f%22chinela criada no tamanho %7Bchinela.getTamanho%7D%0A        elif args%5B0%5D == %22show%22:%0A            if chinela is not None: %0A            %0A            rint(chinela)%0A            chinela = chinela.setTamanho()\n+elif args%5B0%5D == %22show%22:%0A            print(chinela)%0A        \n %0A   \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-21_13-45-24",
+            "content": "@@ -130,30 +130,29 @@\n  if \n-(\n pe \n-%3C= 20 or\n+%3E= 50 and\n  pe \n-%3E= 50)\n+%3C= 20\n  and\n@@ -318,25 +318,16 @@\n rn True%0A\n-        %0A\n     def \n@@ -366,25 +366,24 @@\n  return self\n-.\n __tamanho %0A%0A\n@@ -379,17 +379,16 @@\n _tamanho\n- \n %0A%0A    de\n@@ -469,18 +469,16 @@\n tTamanho\n-()\n %7D%22%0A    %0A\n@@ -478,16 +478,17 @@\n %22%0A    %0A%0A\n+%0A\n def main\n@@ -832,16 +832,17 @@\n    print\n+ \n (f%22chine\n@@ -885,27 +885,9 @@\n anho\n-()%7D%22) %0A            \n+%7D\n %0A   \n@@ -960,29 +960,37 @@\n             \n+%0A        \n     \n-p\n rint(chinela\n@@ -991,16 +991,59 @@\n hinela)%0A\n+            chinela = chinela.setTamanho()%0A\n         \n@@ -1099,12 +1099,13 @@\n do%22)%0A%0Amain()\n+%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-21_13-56-29",
+            "content": "@@ -543,25 +543,8 @@\n ue:%0A\n-        try:%0A    \n     \n@@ -571,51 +571,8 @@\n t()%0A\n-        except EOFError:%0A            break%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-21_14-00-20",
+            "content": "@@ -1146,56 +1146,4 @@\n in()\n-%0A%0A%0Ahavaiana = Chinela()%0Aprint(havaiana.getTamanho())\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-21_14-02-50",
+            "content": "@@ -1168,10 +1168,8 @@\n ela(\n-44\n )%0Apr\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-21_14-05-02",
+            "content": "@@ -1200,58 +1200,4 @@\n o())\n-%0Ahavaiana2 = Chinela(52)%0Aprint(havaiana2.getTamanho())\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-21_14-06-17",
+            "content": "class Chinela:\n    def __init__(self, tamanho: int):\n        self.__tamanho = tamanho\n\n    def setTamanho(self, pe: int):\n        if (pe <= 20 or pe >= 50) and pe % 2 != 0:\n            print(\"fail: ou vc tem pezao ou vc n tem pe\")\n            return False\n        else:\n            self.__tamanho = pe\n            return True\n        \n    def getTamanho(self) -> int:\n        return self.__tamanho \n\n    def __str__(self) -> str:\n        return f\"sua chinela \u00e9 do tamanho {self.getTamanho()}\"\n    \n\ndef main():\n    chinela = None\n    while True:\n        try:\n            line: str = input()\n        except EOFError:\n            break\n        args: list[str] = line.split(\" \")\n        print(\"$\" + line)\n        if not args[0]:\n            continue\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            tamanho = args[1]\n            chinela = Chinela(tamanho)\n            print(f\"chinela criada no tamanho {chinela.getTamanho()}\") \n            \n        elif args[0] == \"show\":\n            if chinela is not None: \n                print(chinela)\n        else:\n            print(\"fail: comando desconhecido\")\n\nmain()\n\n\nhavaiana = Chinela(44)\nprint(havaiana.getTamanho())\nhavaiana2 = Chinela(52)\nprint(havaiana2.getTamanho())",
+            "lines": "50"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-23_13-03-24",
+            "content": "@@ -1,932 +0,0 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A    %0A    def getTamanho(self):%0A        return self.__tamanho%0A    %0A    def setTamanho(self, numeracao: str):%0A        tamanhos_permitidos = %5B%22P%22, %22PP%22, %22M%22, %22G%22, %22GG%22, %22GG%22%5D%0A        if numeracao not in tamanho_validos:%0A            print(%22fail: Valor invalido, tente PP, P, M, G, GG ou XG%22)%0A        else:%0A            self.__tamanho = numeracao%0A        %0A    def show(self) -%3E None:%0A        print(self)%0A    %0A    def_str_(self):%0A        return (f%22size: (%7Bself.getTamanho()%7D)%22)%0A%0A%0Adef main():%0A        roupa = Roupa()%0A%0A        while True:%0A            line = input()%0A            print(%22$%22 + line)%0A            args = line.split(%22 %22)%0A%0A            if args%5B0%5D == %22end%22:%0A                break%0A            if args%5B0%5D == %22show%22:%0A                print(roupa)%0A            if args%5B0%5D == %22size%22:%0A                numeracao = args%5B1%5D%0A                roupa.setTamanho(numeracao)%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-23_13-10-39",
+            "content": "@@ -477,16 +477,13 @@\n  def\n- _\n _str_\n-_\n (sel\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_13-11-12",
+            "content": "@@ -271,22 +271,19 @@\n tamanho_\n-permit\n+val\n idos:%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_13-13-54",
+            "content": "@@ -262,33 +262,32 @@\n o not in tamanho\n-s\n _permitidos:%0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_13-16-29",
+            "content": "@@ -322,9 +322,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_13-16-58",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    \n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, numeracao: str):\n        tamanhos_permitidos = [\"P\", \"PP\", \"M\", \"G\", \"GG\", \"GG\"]\n        if numeracao not in tamanhos_permitidos:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n        else:\n            self.__tamanho = numeracao\n        \n    def show(self) -> None:\n        print(self)\n    \n    def __str__(self):\n        return (f\"size: ({self.getTamanho()})\")\n\n\ndef main():\n        roupa = Roupa()\n\n        while True:\n            line = input()\n            print(\"$\" + line)\n            args = line.split(\" \")\n\n            if args[0] == \"end\":\n                break\n            if args[0] == \"show\":\n                print(roupa)\n            if args[0] == \"size\":\n                numeracao = args[1]\n                roupa.setTamanho(numeracao)\n\nmain()",
+            "lines": "38"
+        }
+    ]
+}

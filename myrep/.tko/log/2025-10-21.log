@@ -1,0 +1,36 @@
+2025-10-21 13:40:57, MOVE, v:1, k:poo@camisa, mode:DOWN
+2025-10-21 13:41:00, MOVE, v:1, k:poo@roupa, mode:DOWN
+2025-10-21 13:41:01, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-21 13:45:23, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-21 13:45:24, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:42
+2025-10-21 13:45:57, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 13:45:59, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 13:56:29, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:41
+2025-10-21 13:56:30, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:00:20, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:44
+2025-10-21 14:00:21, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-21 14:00:22, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-21 14:00:23, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-21 14:00:23, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-21 14:02:50, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:48
+2025-10-21 14:05:02, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:48
+2025-10-21 14:06:17, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:50
+2025-10-21 14:08:31, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-21 14:14:08, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-21 14:14:09, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:15:24, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-21 14:15:25, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-21 14:15:26, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:15:52, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-21 14:18:30, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-21 14:18:31, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:18:34, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-21 14:18:36, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-21 14:18:37, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:18:50, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:18:51, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:18:52, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-21 14:20:30, SELF, v:1, k:poo@chinela, rate:90, iagen:s, guide:s, alone:7
+2025-10-21 14:20:35, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-21 14:20:36, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100, size:0
+2025-10-21 14:37:05, MOVE, v:1, k:poo@camisa, mode:BACK

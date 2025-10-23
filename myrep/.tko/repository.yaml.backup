@@ -1,0 +1,30 @@
+version: '0.2'
+sources:
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
+- database: poo
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  cache_path: C:\Users\Samuel Malagueta\Documents\POO PY\poo-dd-ab-bloco-b-satzhiw\myrep\.tko\cache\poo.md
+  cache_timestamp: '2025-10-23 12:49:58'
+  filters:
+  - acesso
+  - simples
+expanded:
+- poo@campanha-principal
+- poo@bloco_b-modificadores-de-acesso
+tasks:
+  poo@chinela: '{rate:90, iagen:s, guide:s, alone:7}'
+  poo@camisa: '{rate:80, human:s, alone:5}'
+  poo@roupa: '{rate:100, iagen:s, alone:8}'
+  poo@relogio: '{rate:100, iagen:s, alone:10}'
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 0
+  xray: 0
+lang: py
+selected: poo@bloco_b-agregação-simples

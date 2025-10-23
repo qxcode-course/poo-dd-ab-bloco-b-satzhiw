@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-21_14-20-36",
+            "content": "@@ -1,942 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A    %0A    def getTamanho(self):%0A        return self.__tamanho%0A%0A    def setTamanho(self, numeracao: str):%0A        tamanhos_validos = %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D%0A        if numeracao not in tamanhos_validos:%0A            print(f%22fail: tamanho n%C3%A3o encontrado. tamanhos permitidos: %7Btamanhos_validos%7D%22)%0A        else:%0A            self.__tamanho = numeracao%0A%0A    def show(self) -%3E None:%0A        print(self)%0A    %0A    def __str__(self):%0A        return (f%22minha blusa %C3%A9 %7Bself.getTam()%7D%22)%0A%0Adef main():%0A    blusa = Blusa()%0A%0A    while True:%0A        print(%22Qual o tamanho da sua blusa?%22)%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22init%22:%0A            numeracao = args%5B1%5D%0A            blusa.setTam(numeracao)%0A        elif args%5B0%5D == %22show%22:%0A            print(blusa)%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-23_12-50-10",
+            "content": "@@ -521,20 +521,19 @@\n f%22minha \n-cami\n+blu\n sa %C3%A9 %7Bse\n@@ -568,21 +568,19 @@\n     \n-cami\n+blu\n sa = \n-Cami\n+Blu\n sa()\n@@ -634,20 +634,19 @@\n  da sua \n-cami\n+blu\n sa?%22)%0A  \n@@ -925,12 +925,11 @@\n int(\n-cami\n+blu\n sa)%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_12-51-20",
+            "content": "@@ -501,62 +501,8 @@\n f):%0A\n-        # CORRE%C3%87%C3%83O: O m%C3%A9todo %C3%A9 getTamanho, n%C3%A3o getTam%0A\n     \n@@ -542,20 +542,16 @@\n f.getTam\n-anho\n ()%7D%22)%0A%0Ad\n@@ -619,145 +619,62 @@\n nt(%22\n-Digite um comando (ex: init M, show, end):%22)%0A        %0A        try:%0A            line = input()%0A        except EOFError:%0A            break%0A\n+Qual o tamanho da sua camisa?%22)%0A        line = input()\n %0A   \n@@ -811,42 +811,8 @@\n t%22:%0A\n-            if len(args) %3E 1:%0A    \n     \n@@ -851,24 +851,19 @@\n         \n-    cami\n+blu\n sa.setTa\n@@ -863,20 +863,16 @@\n a.setTam\n-anho\n (numerac\n@@ -887,215 +887,56 @@\n     \n-    else:%0A                print(%22fail: comando init precisa de um tamanho (ex: init M)%22)%0A        elif args%5B0%5D == %22show%22:%0A            print(camisa)%0A        else:%0A            print(%22fail: comando desconhecido%22\n+elif args%5B0%5D == %22show%22:%0A            print(camisa\n )%0A%0Am\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-23_12-54-06",
+            "content": "@@ -1287,22 +1287,4 @@\n in()\n-%0A%0Apolo = Camisa(M)\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-23_12-54-39",
+            "content": "@@ -1299,12 +1299,10 @@\n  Camisa(\n-%22M%22\n+M\n )\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-23_12-54-51",
+            "content": "@@ -1307,30 +1307,4 @@\n %22M%22)\n-%0Aprint(polo.setTamanho())%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-23_12-56-29",
+            "content": "@@ -1299,18 +1299,27 @@\n  Camisa(\n-)%0A\n+%22M%22)%0Aprint(\n polo.set\n@@ -1326,25 +1326,11 @@\n Tamanho(\n-%22M%22)%0Aprint(polo\n+)\n )%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-23_12-58-49",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    \n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, numeracao: str):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if numeracao not in tamanhos_validos:\n            print(f\"fail: tamanho n\u00e3o encontrado. tamanhos permitidos: {tamanhos_validos}\")\n        else:\n            self.__tamanho = numeracao\n\n    def show(self) -> None:\n        print(self)\n    \n    def __str__(self):\n        # CORRE\u00c7\u00c3O: O m\u00e9todo \u00e9 getTamanho, n\u00e3o getTam\n        return (f\"minha camisa \u00e9 {self.getTamanho()}\")\n\ndef main():\n    camisa = Camisa()\n\n    while True:\n        print(\"Digite um comando (ex: init M, show, end):\")\n        \n        try:\n            line = input()\n        except EOFError:\n            break\n\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            if len(args) > 1:\n                numeracao = args[1]\n                camisa.setTamanho(numeracao)\n            else:\n                print(\"fail: comando init precisa de um tamanho (ex: init M)\")\n        elif args[0] == \"show\":\n            print(camisa)\n        else:\n            print(\"fail: comando desconhecido\")\n\nmain()\n\npolo = Camisa()\npolo.setTamanho(\"M\")\nprint(polo)\n",
+            "lines": "53"
+        }
+    ]
+}
