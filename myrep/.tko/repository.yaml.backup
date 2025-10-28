@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: C:\Users\Samuel Malagueta\Documents\POO PY\poo-dd-ab-bloco-b-satzhiw\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-27 22:38:42'
+  cache_timestamp: '2025-10-28 11:30:56'
   filters:
   - acesso
   - simples
@@ -22,6 +22,8 @@ tasks:
   poo@roupa: '{rate:100, iagen:s, alone:8}'
   poo@relogio: '{rate:100, iagen:s, alone:10}'
   poo@motoca: '{rate:100, iagen:s, other:s, alone:8, study:120}'
+  poo@grafite: '{rate:10}'
+  poo@motouber: '{rate:100, iagen:s, alone:7, study:90}'
 flags:
   quests: 2
   tracks: 1
@@ -29,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motoca
+selected: poo@grafite
