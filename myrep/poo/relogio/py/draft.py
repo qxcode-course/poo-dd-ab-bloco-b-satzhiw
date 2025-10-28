@@ -33,6 +33,8 @@ class Watch:
         self.__segundo += 1
         if self.__segundo == 60:
             self.__segundo= 0 
+
+            
             self.__minuto += 1
         if self.__minuto == 60:
             self.__minuto = 0 
